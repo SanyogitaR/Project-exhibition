@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Village Products Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="landingPage.css">
     <style>
         /* Reset */
         * {
@@ -14,6 +16,9 @@
 
         body {
             font-family: Arial, sans-serif;
+            height: 100vh;
+            width: 100%;
+
         }
 
         /* Top bar */
@@ -110,13 +115,17 @@
 
         /* Hero Section */
         .hero {
-            background-image: url('landing page picture.png');
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            flex-direction: row;
             background-color: #2f6654;
             color: white;
-            padding: 100px 50px;
-            text-align: center;
         }
-
+        .hero img{
+            height: 100vh;
+    width: 79vw;
+        }
         .hero h1 {
             font-size: 48px;
             margin-bottom: 10px;
@@ -187,11 +196,33 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Best Marketplace for Authentic Village Products</h1>
+        <div><h1>Best Marketplace for Authentic Village Products</h1>
         <p>Discover the Essence of Village Life in Every Product!</p>
         <button>Shop All</button>
+</div>
+
+        <img src="./landing page picture.png" alt="Village marketplace image">
     </section>
 
+
+    <!-- section1 -->
+
+    <section class="section1">
+        <div class="s1"><img src="" alt="" srcset="">
+        <h1>Reliable Shipping</h1>
+        <p>[Your Company Name] ensures secure and prompt delivery of all products right to your doorstep. Enjoy free shipping on orders above [amount]. Our reliable partners make sure your items arrive safely and on time</p>
+    </div>
+        <div class="s1"><img src="" alt="" srcset="">
+        <h1>Reliable Shipping</h1>
+        <p>[Your Company Name] ensures secure and prompt delivery of all products right to your doorstep. Enjoy free shipping on orders above [amount]. Our reliable partners make sure your items arrive safely and on time</p>
+    </div>
+        <div class="s1"><img src="" alt="" srcset="">
+        <h1>Reliable Shipping</h1>
+        <p>[Your Company Name] ensures secure and prompt delivery of all products right to your doorstep. Enjoy free shipping on orders above [amount]. Our reliable partners make sure your items arrive safely and on time</p>
+    </div>
+      
+    </section>
+    <div class="section1Heading">Beautifully crafted items that add a touch of village charm to your home.</div>
     <!-- Chatbot Icon -->
     <div class="chatbot">
         <img src="chatbot-icon.png" alt="Chatbot">
