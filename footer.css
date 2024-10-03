@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -50px; /* To overlap the footer bottom */
+    top: -50px; 
 }
 
 .join-community {
