@@ -6,161 +6,8 @@
     <title>Village Products Marketplace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="landingPage.css">
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            width: 100%;
-
-        }
-
-        /* Top bar */
-        .top-bar {
-            background-color: #6f9b83;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        /* Header - Search and Account */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            background-color: white;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 50px;
-        }
-
-        .search-bar {
-            width: 40%;
-            display: flex;
-            align-items: center;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            outline: none;
-        }
-
-        .search-bar button {
-            background-color: #6f9b83;
-            border: none;
-            color: white;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .account {
-            display: flex;
-            align-items: center;
-        }
-
-        .account img {
-            height: 40px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: white;
-            padding: 10px 50px;
-            display: flex;
-            justify-content: center;
-            border-bottom: 1px solid #ccc;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #6f9b83;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            padding-left: 50px;
-            flex-direction: row;
-            background-color: #2f6654;
-            color: white;
-        }
-        .hero img{
-            height: 100vh;
-    width: 79vw;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .hero button {
-            padding: 15px 30px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-
-        /* Chatbot Icon */
-        .chatbot {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        .chatbot img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="footer.css">
+ 
 </head>
 <body>
 
@@ -228,5 +75,57 @@
         <img src="chatbot-icon.png" alt="Chatbot">
     </div>
 
+
+<!-- section 2 -->
+
+<link rel="stylesheet" href="./section2.css">
+<div class="Section2options">
+    <div class="product-category active">Best Sellers</div>
+    <div class="product-category">Bundles & Promotions</div>
+    <div class="product-category">On Sale</div>
+</div>
+
+
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-top">
+            <div class="join-community">
+                <h2>Join Our Community!</h2>
+                <p>Stay Connected & Get Exclusive Updates on Traditional Products for Your First Order</p>
+                <p>Sign up with your email to discover unique, authentic village products and receive updates on new arrivals and special offers.</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Join now</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <div class="logo">
+                    <h3>logo</h3>
+                    <p>We are dedicated to bringing you the finest, handpicked village products from across India. Each item is a celebration of traditional craftsmanship and heritage, made with love and care by local artisans and farmers. By supporting us, you are helping to preserve these age-old traditions and empower rural communities.</p>
+                </div>
+                <div class="contact-info">
+                    <h4>CONTACT US</h4>
+                    <p>info@shopshelf.cc</p>
+                    <div class="payment-icons">
+                        <img src="visa.png" alt="Visa">
+                        <img src="mastercard.png" alt="Mastercard">
+                        <img src="bitcoin.png" alt="Bitcoin">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Out Of Stock</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer-copyright">
+                © 2022 Top Shelf BC. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
