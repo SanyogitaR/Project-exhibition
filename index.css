@@ -1504,3 +1504,6 @@
     color: var(--neutral-500);
     font-family: var(--bold-text-base);
 }
+.mask-group-icon {
+    background-color: #2f6654; 
+}
