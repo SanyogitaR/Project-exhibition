@@ -30,7 +30,7 @@
     position: relative;
     line-height: 150%;
 }
-.seacrch {
+.search {
     width: 400px;
     border-radius: var(--br-81xl);
     background-color: var(--neutral-0);
@@ -1495,6 +1495,8 @@
 }
 .landing-page {
     width: 100%;
+    max-width: 1440px; /* Set a maximum width for the page */
+    margin: 0 auto; /* Center the page */
     position: relative;
     background-color: var(--neutral-0);
     height: 7929px;
