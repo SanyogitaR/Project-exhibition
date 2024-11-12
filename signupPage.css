@@ -1,0 +1,259 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: #6ba89f;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-bar .search-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.banner-text {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+    flex: 1;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 40px;
+    gap: 40px;
+    flex: 1;
+    min-height: 600px;
+    max-width: 1200px; /* Allow content to expand horizontally */
+    margin: 0 auto; /* Center content */
+}
+
+.image-section img {
+    width: 650px; /* Fixed width for larger image */
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-section {
+    padding: 20px;
+    max-width: 400px;
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-section p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-account-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #004225;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.google-signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.google-signup-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-link {
+    color: #004225;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #111111; /* Blackish color for the footer */
+    color: #cccccc; /* Lighter text color for better readability */
+    padding: 80px 40px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.footer-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-right h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-icons img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    border-top: 1px solid #333333; /* Darker border color to match the footer background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-bottom .footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
