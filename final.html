@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Products Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #06b74a, brown);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 5px solid brown;
+}
+
+.blog-content {
+    padding: 10px;
+}
+
+h2 {
+    color: green;
+}
+
+.read-more {
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: greenyellow;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Our Rural Products Blog!!</h1>
+        <p>Explore the beauty and utility of rural craftsmanship</p>
+    </header>
+    
+    <main>
+        <section class="blog-post">
+            <img src="https://thumbs.dreamstime.com/b/three-decorated-colorful-handcrafted-pottery-jugs-still-life-white-background-76862327.jpg" alt="Rural Craft" class="blog-image">
+            <div class="blog-content">
+                <h2>The Art of Handcrafted Pottery</h2>
+                <p>Discover the unique techniques behind our handcrafted pottery. Each piece tells a story of tradition and skill passed down through generations.</p>
+                <button class="read-more" onclick="openModal('pottery')">Read More</button>
+            </div>
+        </section>
+
+        <section class="blog-post">
+            <img src="https://thumbs.dreamstime.com/b/close-up-colorful-handmade-textile-design-pattern-handmade-embroidered-textile-design-india-275558112.jpg" alt="Rural Weaving" class="blog-image">
+            <div class="blog-content">
+                <h2>Vibrant Handwoven Textiles</h2>
+                <p>Learn about the vibrant colors and patterns of our handwoven textiles, crafted by skilled artisans from rural communities.</p>
+                <button class="read-more" onclick="openModal('textiles')">Read More</button>
+            </div>
+        </section>
+
+        <section class="blog-post">
+            <img src="https://cuttingedgeproducts.org/wp-content/uploads/2021/06/Organic-farming.jpg" alt="Rural Farming" class="blog-image">
+            <div class="blog-content">
+                <h2>Sustainable Farming Practices</h2>
+                <p>Join us as we explore sustainable farming practices that support rural livelihoods while preserving the environment.</p>
+                <button class="read-more" onclick="openModal('farming')">Read More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rural Products E-Commerce. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function openModal(post) {
+    const modal = document.getElementById("modal");
+    const modalText = document.getElementById("modal-text");
+
+    let content = '';
+
+    switch(post) {
+        case 'pottery':
+            content = `<h2>The Art of Handcrafted Pottery</h2>
+                       <p>In-depth exploration of the techniques and traditions behind handcrafted pottery.</p>`;
+            break;
+        case 'textiles':
+            content = `<h2>Vibrant Handwoven Textiles</h2>
+                       <p>Discover the stories behind the vibrant colors and patterns of our textiles.</p>`;
+            break;
+        case 'farming':
+            content = `<h2>Sustainable Farming Practices</h2>
+                       <p>Insights into sustainable practices that benefit both farmers and the environment.</p>`;
+            break;
+        default:
+            content = `<h2>Error</h2><p>Content not found.</p>`;
+    }
+
+    modalText.innerHTML = content;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+</script>
+</html>
