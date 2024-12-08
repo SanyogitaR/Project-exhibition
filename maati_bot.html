@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chatbot</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        /* Style for the header */
+        header {
+            background-color: #366f38; 
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 15px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%; /* Make sure the header stretches across */
+            position: relative;
+        }
+
+        /* Animation for the moving text */
+        header span {
+            position: absolute;
+            animation: moveText 8s linear infinite; /* Slower animation */
+        }
+
+        /* Keyframes for moving text from right to left */
+        @keyframes moveText {
+            0% {
+                left: 100%;   /* Start completely off-screen to the right */
+            }
+            100% {
+                left: -100%;  /* Move off-screen to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with moving text -->
+    <header>
+        <span>Welcome to Our Chatbot Service</span>
+    </header>
+
+    <!-- Chatbot iframe -->
+    <iframe
+        src="https://www.chatbase.co/chatbot-iframe/Vq2BBxhd2v-YV4UQivut6"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+    ></iframe>
+
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "Vq2BBxhd2v-YV4UQivut6",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="Vq2BBxhd2v-YV4UQivut6"
+        domain="www.chatbase.co"
+        defer
+    ></script>
+</body>
+</html>
