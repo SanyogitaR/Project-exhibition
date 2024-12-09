@@ -1,0 +1,308 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   My Account
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: rgb(9, 56,9 );
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .header .search-container {
+            display: inline-block;
+            position: relative;
+        }
+        .header .search-container input[type="text"] {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .header .search-container .fa-search {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #4CAF50;
+        }
+        .header .account-info {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .header .account-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header .cart {
+            float: right;
+            margin-right: 20px;
+        }
+        .header .cart a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .content form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content form .form-group {
+            width: 48%;
+            margin: 1%;
+        }
+        .content form .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .content form .form-actions {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .content form .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .content form .form-actions .cancel {
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+        .content form .form-actions .save {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .footer-content .logo {
+            text-align: left;
+        }
+        .footer .footer-content .contact {
+            text-align: right;
+        }
+        .footer .footer-content .contact img {
+            margin: 0 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .content {
+                width: 100%;
+            }
+            .content form .form-group {
+                width: 100%;
+            }
+            .footer .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer .footer-content .logo, .footer .footer-content .contact {
+                text-align: center;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="search-container">
+    <input placeholder="Search" type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+   <div class="account-info">
+    <a href="#">
+     Your Account
+    </a>
+   </div>
+   <div class="cart">
+    <a href="#">
+     <i class="fas fa-shopping-cart">
+     </i>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <div class="sidebar">
+    <h3>
+     Manage My Account
+    </h3>
+    <ul>
+     <li>
+      <a href="#">
+       My Profile
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Address Book
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       My Payment Options
+      </a>
+     </li>
+    </ul>
+    <h3>
+     My Orders
+    </h3>
+    <ul>
+     <li>
+      <a href="#">
+       My Returns
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       My Cancellations
+      </a>
+     </li>
+    </ul>
+    <h3>
+     My Wishlist
+    </h3>
+   </div>
+   <div class="content">
+    <h2>
+     Edit Your Profile
+    </h2>
+    <form>
+     <div class="form-group">
+      <label for="first-name">
+       First Name
+      </label>
+      <input id="first-name" type="text" />
+     </div>
+     <div class="form-group">
+      <label for="last-name">
+       Last Name
+      </label>
+      <input id="last-name" type="text" />
+     </div>
+     <div class="form-group">
+      <label for="email">
+       Email
+      </label>
+      <input id="email" type="email" />
+     </div>
+     <div class="form-group">
+      <label for="address">
+       Address
+      </label>
+      <input id="address" type="text" />
+     </div>
+     <div class="form-group">
+      <label for="current-password">
+       Current Password
+      </label>
+      <input id="current-password" type="password"/>
+     </div>
+     <div class="form-group">
+      <label for="new-password">
+       New Password
+      </label>
+      <input id="new-password" type="password"/>
+     </div>
+     <div class="form-group">
+      <label for="confirm-password">
+       Confirm New Password
+      </label>
+      <input id="confirm-password" type="password"/>
+     </div>
+     <div class="form-actions">
+      <button class="cancel" type="button">
+       Cancel
+      </button>
+      <button class="save" type="submit">
+       Save Changes
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="footer-content">
+    <div class="logo">
+     <h3>
+      logo
+     </h3>
+     <p>
+      We are dedicated to bringing you the finest, handpicked village products from across India. Each item is a celebration of traditional craftsmanship and heritage, made with love and care.
+     </p>
+    </div>
+    <div class="contact">
+     <h3>
+      CONTACT US
+     </h3>
+     <p>
+      info@kspetbto.cc
+     </p>
+     <img alt="Mastercard logo" height="20" src="https://storage.googleapis.com/a1aa/image/AwTeeO1H3ChjUEUHflqAW3QFMoG9KjHakMeKHfTVWRlbuuGfE.jpg" width="30"/>
+     <img alt="Visa logo" height="20" src="https://storage.googleapis.com/a1aa/image/O4JuvMfWgXWXF6hb3hCcsp0zMRgXSBPe8b3MTMPsx9G1114TA.jpg" width="30"/>
+     <img alt="PayPal logo" height="20" src="https://storage.googleapis.com/a1aa/image/OxnWxSw3aFJ9HVmqTvm30M5IohN3AOUnexJ14Lojwhh46a8JA.jpg" width="30"/>
+    </div>
+   </div>
+  </div>
+ </body>

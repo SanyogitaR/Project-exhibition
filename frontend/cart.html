@@ -1,0 +1,290 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Billing Details
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color:  rgb(9, 56,9 );
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        .header .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color:  rgb(9, 56, 9);
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .header .account-cart {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header .account-cart a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .billing-details, .order-summary {
+            width: 48%;
+        }
+        .billing-details input, .order-summary input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .billing-details label, .order-summary label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .order-summary {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .order-summary .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .order-summary .product img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .order-summary .total {
+            font-weight: bold;
+        }
+        .order-summary .payment-methods {
+            margin: 20px 0;
+        }
+        .order-summary .payment-methods label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .order-summary .payment-methods input {
+            margin-right: 10px;
+        }
+        .order-summary .coupon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .order-summary .coupon input {
+            width: 70%;
+            margin-right: 10px;
+        }
+        .order-summary button {
+            width: 100%;
+            padding: 10px;
+            background-color:  rgb(9, 56, 9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .contact-us {
+            margin: 20px 0;
+        }
+        .footer .contact-us img {
+            margin: 0 10px;
+        }
+        .footer .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer .description {
+            margin: 20px 0;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div>
+    Bringing the Heart of the Village to Your Doorstep!
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+   <div class="account-cart">
+    <a href="#">
+     Your Account
+    </a>
+    <a href="#">
+     <i class="fas fa-shopping-cart">
+     </i>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <div class="billing-details">
+    <h2>
+     Billing Details
+    </h2>
+    <label for="first-name">
+     First Name*
+    </label>
+    <input id="first-name" placeholder="First Name*" type="text"/>
+    <label for="company-name">
+     Company Name
+    </label>
+    <input id="company-name" placeholder="Company Name" type="text"/>
+    <label for="street-address">
+     Street Address*
+    </label>
+    <input id="street-address" placeholder="Street Address*" type="text"/>
+    <label for="apartment">
+     Apartment, floor, etc. (optional)
+    </label>
+    <input id="apartment" placeholder="Apartment, floor, etc. (optional)" type="text"/>
+    <label for="town-city">
+     Town/City*
+    </label>
+    <input id="town-city" placeholder="Town/City*" type="text"/>
+    <label for="phone-number">
+     Phone Number*
+    </label>
+    <input id="phone-number" placeholder="Phone Number*" type="text"/>
+    <label for="email-address">
+     Email Address*
+    </label>
+    <input id="email-address" placeholder="Email Address*" type="text"/>
+    <label>
+     <input type="checkbox"/>
+     Save this information for faster check-out next time
+    </label>
+   </div>
+   <div class="order-summary">
+    <div class="product">
+     <img alt="Image of an LCD Monitor" height="50" src="https://storage.googleapis.com/a1aa/image/rVRfpEhuH2R6By6nxeoffN0XgzB8ZQf5pAvdkeWY07EUgSNeJA.jpg" width="50"/>
+     <span>
+      LCD Monitor
+     </span>
+     <span>
+      $650
+     </span>
+    </div>
+    <div class="product">
+     <img alt="Image of a Hi Gamepad" height="50" src="https://storage.googleapis.com/a1aa/image/XefUIk0EKar9nEiUWLiQ96TOfQqhlEZLyZYYcMFUXXZEUqxnA.jpg" width="50"/>
+     <span>
+      Hi Gamepad
+     </span>
+     <span>
+      $1100
+     </span>
+    </div>
+    <div class="subtotal">
+     <span>
+      Subtotal:
+     </span>
+     <span>
+      $1750
+     </span>
+    </div>
+    <div class="shipping">
+     <span>
+      Shipping:
+     </span>
+     <span>
+      Free
+     </span>
+    </div>
+    <div class="total">
+     <span>
+      Total:
+     </span>
+     <span>
+      $1750
+     </span>
+    </div>
+    <div class="payment-methods">
+     <label>
+      <input name="payment-method" type="radio"/>
+      Bank
+      <img alt="Bank icon" height="20" src="https://storage.googleapis.com/a1aa/image/1s9FZ3flwxU3fUPl98Q3VZg3ta9yyOblt29kOqWh7LMfTqxnA.jpg" width="20"/>
+      <img alt="Visa icon" height="20" src="https://storage.googleapis.com/a1aa/image/41tMw4w0OfTKUaOGSBlesWIxBGXcBG1aF9UAFbgOBiqAK14TA.jpg" width="20"/>
+      <img alt="Mastercard icon" height="20" src="https://storage.googleapis.com/a1aa/image/cIUNmCKzA16fXCT63TJ6ldIW9KrS7n7yxtxIFNAGsjVfJ14TA.jpg" width="20"/>
+     </label>
+     <label>
+      <input name="payment-method" type="radio"/>
+      Cash on delivery
+     </label>
+    </div>
+    <div class="coupon">
+     <input placeholder="Coupon Code" type="text"/>
+     <button>
+      Apply Coupon
+     </button>
+    </div>
+    <button>
+     Place Order
+    </button>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="logo">
+    logo
+   </div>
+   <div class="description">
+    We are dedicated to bringing you the finest, handpicked village products from across India. Each item is a celebration of traditional craftsmanship and heritage, made with love and care by local artisans and farmers. By supporting us, you are helping to preserve these age-old traditions and empower rural communities.
+   </div>
+   <div class="contact-us">
+    <div>
+     CONTACT US
+    </div>
+    <div>
+     info@villageheritage.cc
+    </div>
+    <img alt="Visa icon" height="20" src="https://storage.googleapis.com/a1aa/image/41tMw4w0OfTKUaOGSBlesWIxBGXcBG1aF9UAFbgOBiqAK14TA.jpg" width="20"/>
+    <img alt="Mastercard icon" height="20" src="https://storage.googleapis.com/a1aa/image/cIUNmCKzA16fXCT63TJ6ldIW9KrS7n7yxtxIFNAGsjVfJ14TA.jpg" width="20"/>
+    <img alt="American Express icon" height="20" src="https://storage.googleapis.com/a1aa/image/3feBXwvJK1vjvUbojHvxTeauMbUHSX8nUf09Gzrj60ecQpGfE.jpg" width="20"/>
+   </div>
+  </div>
+ </body>
+</html>
